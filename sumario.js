@@ -13,7 +13,7 @@ function inserirSumario() {
 }
 
 function alterarh2(elem, secnum) {
-    insereNumero(elem, secnum)
+    inserirNumero(elem, secnum)
     elem.id = `sec${secnum}`
     const retornar = criarLink('#', 'voltar')
     inserirDps(elem, retornar)
