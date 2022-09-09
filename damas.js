@@ -42,12 +42,12 @@ function criarTabuleiro() {
 
 function criarPeca(cor,ide) {
 		let imagem = document.createElement('img')
-		imagem.setAttribute('src', `img/${color}.png`)
+		imagem.setAttribute('src', `img/${cor}.png`)
 		imagem.setAttribute('width', `${tamanho-4}px`)
 		imagem.setAttribute('height', `${tamanho-4}px`)
 		imagem.setAttribute('draggable','true')
 		imagem.setAttribute('id', ide)
-		imagem.setAttribute('class', color)
+		imagem.setAttribute('class', cor)
 		
     return imagem
 }
