@@ -8,6 +8,7 @@ document.body.append(criarTabuleiro());
 function criaTabuleiro() {
     const tam = 8;
     let table = document.createElement('table');
+
     table.style.borderStyle = 'solid';
     table.style.borderSpacing = 0;
     table.style.margin = 'auto'
