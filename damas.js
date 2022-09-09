@@ -32,7 +32,7 @@ function criarTabuleiro() {
                 if (i*8 + j <= 24) {
                     celula.append(criarPeca('black',idPeca))    }
                 else if (i*8 + j >= 40) {
-                    celula.append(criarPeca('red', idPeca))
+                    celula.append(criarPeca('blue', idPeca))
                 }
             }
             else {
@@ -76,7 +76,7 @@ function drop() {
             let t = c.childElementCount
             posicaoFinal = event.target.id
             if (t == '0' && posicaoInicial != posicaoFinal) {
-                if (classe == 'red' && posicaoInicial > posicaoFinal && posicaoInicial - posicaoFinal == 1 ||
+                if (classe == 'blue' && posicaoInicial > posicaoFinal && posicaoInicial - posicaoFinal == 1 ||
                 classe == 'black' && posicaoInicial < posicaoFinal&& posicaoFinal - posicaoInicial == 1) {
                     event.target.appendChild(document.getElementById(data))
                 }
